@@ -8,15 +8,15 @@ def GuessNumber():
 
                                                       #Getting input from user
 
-    print(" Guess a number within the range of 1-100. You have five chances to guess it.")
+    print(" Guess a number within the range of 5-50. You have five chances to guess it.")
 
                                                      #Defining the range of numbers that contains the random numbers
 
-    number = random.randint(1, 100)
+    number = random.randint(5, 50)
 
-                                                     #Innitializing countValue to 1
+                                                     #Innitializing countValue to 5
 
-    countValue = 1
+    countValue = 5
 
                                                       #Display the number of guesses
 
@@ -30,7 +30,7 @@ def GuessNumber():
 
     while number != userGuess:
 
-        if (countValue == 5 or userGuess == number):
+        if (countValue == 10 or userGuess == number):
 
                                                       #Display warning message to user
 
